@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "../../../inop"
+		},
+		{
+			"name": "uart_passthrought_test_arduino",
+			"path": "../../../../Users/Пользователь/Documents/PlatformIO/Projects/uart_passthrought_test_arduino"
+		},
+		{
+			"name": "uart_passthrought_test_ESP",
+			"path": "../../../../Users/Пользователь/Documents/PlatformIO/Projects/uart_passthrought_test_ESP"
+		},
+		{
+			"name": "Motors_driver",
+			"path": "../../Motors_driver"
+		},
+		{
+			"name": "Claw_driwer",
+			"path": "../../Claw_driwer"
+		},
+		{
+			"name": "Main_board",
+			"path": ".."
+		},
+		{
+			"name": "SPI_bridge",
+			"path": "../../../Sattelite/code/SPI_bridge"
+		},
+		{
+			"name": "OLED_driver",
+			"path": "../../../Sattelite/code/OLED_driver"
+		}
+	],
+	"settings": {}
+}

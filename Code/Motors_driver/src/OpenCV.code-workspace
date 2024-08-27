@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../OpenCV"
+		},
+		{
+			"name": "Claw_driwer",
+			"path": "../../Claw_driwer"
+		},
+		{
+			"name": "Main_board",
+			"path": "../../Main_board"
+		},
+		{
+			"name": "Motors_driver",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cmath": "cpp",
+			"iterator": "cpp",
+			"xutility": "cpp",
+			"chrono": "cpp",
+			"cstdlib": "cpp"
+		}
+	}
+}

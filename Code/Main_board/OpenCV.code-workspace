@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../OpenCV"
+		},
+		{
+			"name": "Main_board",
+			"path": "."
+		},
+		{
+			"name": "Claw_driwer",
+			"path": "../Claw_driwer"
+		},
+		{
+			"name": "ESP_to_comp_test",
+			"path": "../ESP_to_comp_test"
+		}
+	],
+	"settings": {}
+}

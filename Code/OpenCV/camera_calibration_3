@@ -1,0 +1,36 @@
+import cv2
+import numpy as np
+
+resolution = (1280, 720)
+
+# Load the image
+img = cv2.imread("camera_calibration_images/IMG_20240620_033348.jpg")
+img = cv2.resize(img, resolution, interpolation=cv2.INTER_LANCZOS4)
+
+# Color-segmentation to get binary mask
+lwr = np.array([187, 121, 121])
+upr = np.array([242, 136, 142])
+
+#Min [2, 13, 49]
+#Max [35, 82, 115]
+
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
+msk = cv2.inRange(hsv, lwr, upr)
+
+# Extract chess-board
+krn = cv2.getStructuringElement(cv2.MORPH_RECT, (50, 30))
+dlt = cv2.dilate(msk, krn, iterations=5)
+res = 255 - cv2.bitwise_and(dlt, msk)
+
+# Displaying chess-board features
+res = np.uint8(res)
+cv2.imshow("res", res)
+cv2.waitKey(0)
+ret, corners = cv2.findChessboardCorners(res, (3, 3), False)
+if ret:
+    print(corners)
+    fnl = cv2.drawChessboardCorners(img, (7, 7), corners, ret)
+    cv2.imshow("fnl", fnl)
+    cv2.waitKey(0)
+else:
+    print("No Checkerboard Found")
