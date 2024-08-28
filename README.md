@@ -6,6 +6,7 @@ Robot that was made for robototechnics olympiad to move pipes from one place to 
 
 Close up view of mototr driver PCB's. PCB consists of atmega328p microcontroller and 4 H bridge drivers for DC mototrs.
 
+:-------------------------:|:-------------------------:
 ![IMG_20220210_171617](https://github.com/Fyodorbezz/Tube_mover/blob/main/Images/IMG_20240429_061352.jpg) | ![IMG_20220210_171617](https://github.com/Fyodorbezz/Tube_mover/blob/main/Images/IMG_20240429_062221.jpg)
 
 ![IMG_20220210_171617](https://github.com/Fyodorbezz/Tube_mover/blob/main/Images/IMG_20240812_180401.jpg)
